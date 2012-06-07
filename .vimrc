@@ -18,6 +18,9 @@ set cursorcolumn
 set number
 set numberwidth=4
 
+" Syntax highlighting 
+"syntax enable                                                                                                                                                                                               
+
 " Key bindings
 map <C-n> :browse confirm e<cr>
 " map <C-S-s> :browse confirm saveas<cr>
