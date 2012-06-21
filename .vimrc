@@ -25,3 +25,9 @@ set numberwidth=4
 map <C-n> :browse confirm e<cr>
 " map <C-S-s> :browse confirm saveas<cr>
 map <C-s> :w<cr>
+
+" Key binding for inserting text from outside
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
