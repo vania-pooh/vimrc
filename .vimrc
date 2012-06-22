@@ -31,3 +31,5 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
+" Enabling filetype plugin for NERD Commenter
+filetype plugin on
