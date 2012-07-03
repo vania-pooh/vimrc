@@ -33,3 +33,8 @@ set showmode
 
 " Enabling filetype plugin for NERD Commenter
 filetype plugin on
+nmap <C-\> <plug>NERDCommenterToggle
+vmap <C-\> <plug>NERDCommenterToggle
+
+" Mappings for NERD Tree plugin
+map <F2> :NERDTreeToggle<CR> 
