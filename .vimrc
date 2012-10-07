@@ -20,6 +20,8 @@ set numberwidth=4
 
 " Syntax highlighting 
 "syntax enable                                                                                                                                                                                               
+" Word wrap
+set wrap
 
 " Key bindings
 map <C-n> :browse confirm e<cr>
