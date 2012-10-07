@@ -6,6 +6,10 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+" Adding a hotkey to toggle autoclose
+let g:autoclose_on = 0
+nmap <C-a> <Plug>ToggleAutoCloseMappings
+
 " Advanced status line
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set laststatus=2
@@ -18,15 +22,13 @@ set cursorcolumn
 set number
 set numberwidth=4
 
-" Syntax highlighting 
-"syntax enable                                                                                                                                                                                               
-" Word wrap
-set wrap
+" Highlight search results
+set hlsearch
 
-" Key bindings
-map <C-n> :browse confirm e<cr>
-" map <C-S-s> :browse confirm saveas<cr>
-map <C-s> :w<cr>
+" Word wrap and line breaks
+set wrap
+set linebreak
+set nolist
 
 " Key binding for inserting text from outside
 nnoremap <F2> :set invpaste paste?<CR>
