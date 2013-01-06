@@ -28,6 +28,9 @@ syntax enable
 " Highlight search results
 set hlsearch
 
+" Folding method
+set foldmethod=indent
+
 " Word wrap and line breaks
 set wrap
 set linebreak
@@ -45,3 +48,7 @@ vmap <C-\> <plug>NERDCommenterToggle
 
 " Mappings for NERD Tree plugin
 map <F2> :NERDTreeToggle<CR> 
+
+" Haskell indentation config
+let g:haskell_indent_if = 4
+let g:haskell_indent_case = 4
