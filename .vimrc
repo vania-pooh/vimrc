@@ -49,6 +49,6 @@ vmap <C-\> <plug>NERDCommenterToggle
 " Mappings for NERD Tree plugin
 map <F2> :NERDTreeToggle<CR> 
 
-" Haskell indentation config
-let g:haskell_indent_if = 4
-let g:haskell_indent_case = 4
+" Mappings to show\hide hidden symbols
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,nbsp:‧
+nmap hs :set invlist<CR>
