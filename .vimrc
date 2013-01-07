@@ -30,6 +30,7 @@ set hlsearch
 
 " Folding method
 set foldmethod=indent
+set foldlevel=20
 
 " Word wrap and line breaks
 set wrap
