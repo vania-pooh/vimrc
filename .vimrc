@@ -23,7 +23,7 @@ set number
 set numberwidth=4
 
 " Syntax highlighting 
-syntax enable
+syntax on
 
 " Highlight search results
 set hlsearch
@@ -42,8 +42,10 @@ nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
 set showmode
 
-" Enabling filetype plugin for NERD Commenter
+" Enabling filetype plugins support
 filetype plugin on
+
+" Enabling filetype plugin for NERD Commenter
 nmap <C-\> <plug>NERDCommenterToggle
 vmap <C-\> <plug>NERDCommenterToggle
 
@@ -53,3 +55,11 @@ map <F2> :NERDTreeToggle<CR>
 " Mappings to show\hide hidden symbols
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,nbsp:‧
 nmap hs :set invlist<CR>
+
+""""""""""""""""""""""""""""
+" Haskell useful variables "
+""""""""""""""""""""""""""""
+let g:haddock_browser = "/usr/bin/firefox"
+let g:ghc = "/usr/bin/ghc"
+let g:haddock_docdir = "/usr/share/doc/ghc-doc/html/"
+au BufEnter *.hs compiler ghc
