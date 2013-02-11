@@ -29,8 +29,18 @@ syntax on
 set hlsearch
 
 " Folding method
-set foldmethod=indent
-set foldlevel=20
+set foldmethod=syntax
+set foldlevelstart=1
+let javaScript_fold=1         " JavaScript
+let perl_fold=1               " Perl
+let php_folding=1             " PHP
+let r_syntax_folding=1        " R
+let ruby_fold=1               " Ruby
+let sh_fold_enabled=1         " sh
+let vimsyn_folding='af'       " Vim script
+let xml_syntax_folding=1      " XML
+"set foldmethod=syntax
+"set foldlevel=20
 
 " Word wrap and line breaks
 set wrap
@@ -63,3 +73,10 @@ let g:haddock_browser = "/usr/bin/firefox"
 let g:ghc = "/usr/bin/ghc"
 let g:haddock_docdir = "/usr/share/doc/ghc-doc/html/"
 au BufEnter *.hs compiler ghc
+
+" Adding Pathogen support
+execute pathogen#infect()
+
+" Adding hotkeys for tabs
+nmap T :tabnew<CR>
+nmap W :tabclose<CR>
